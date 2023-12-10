@@ -1,0 +1,170 @@
+
+.about-me{
+        position: relative;
+        margin-top:70px ;
+       background: #2B2B2B;
+       height: 745px;
+       display: flex;
+} 
+
+.half-g h1{
+    font-size: 70px;
+    font-family: 'Space-Grotesk', sans-serif;
+    transform: rotateZ(-45deg);
+}
+.half-g{
+    margin-top: -60px;
+    width: 30%;
+    height: 0px;
+}
+.half-g h1 span{
+   color: white;
+}
+
+.about-me #profile{
+    margin-top: 130px;
+    margin-left: -370px;
+    margin-right: 35px;
+}
+
+.white-line{
+    position: relative;
+    background-color: white;
+    top: 0%;
+    left: 5%;
+    width: 70%;
+    height: 2px;
+}
+
+.about-intro{
+    width: 800px;
+}
+.about-intro .intro{
+    
+    color: white;
+    font-size: 27px;
+    letter-spacing: 2px;
+    font-family: 'Space-Grotesk', sans-serif;
+
+}
+
+.about-intro .intro .right-side{
+    text-align: right;
+}
+
+.introduction{
+    
+    text-align: left;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-family: 'Space-Grotesk', sans-serif;
+    line-height: 1.2;
+    width: 100%;
+}
+
+.introduction h1{
+    color: white;
+    font-size: 26px;
+    letter-spacing: 2px;
+    font-family: 'Space-Grotesk', sans-serif;
+    padding-bottom: 10px;
+}
+.introduction p{
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: 'Space-Grotesk', sans-serif;
+    line-height: 1.2;
+    
+}
+
+
+.join-me{
+    
+    text-align: right;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-family: 'Space-Grotesk', sans-serif;
+    line-height: 1.2;
+    width: 100%;
+}
+.join-me  h1{
+    color: white;
+    font-size:  26px;
+    letter-spacing: 2px;
+    font-family: 'Space-Grotesk', sans-serif;
+    padding-bottom: 10px;
+}
+.join-me p{
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: 'Space-Grotesk', sans-serif;
+    line-height: 1.2;
+    
+}
+.arrow-right img{
+    margin-top: 110px;
+    margin-left: 38px;
+}
+.arrow-right p{
+   
+    transform: rotateZ(90deg);
+    color: white;
+    font-size: 18px;
+    letter-spacing: 8px;
+    font-family: 'Space-Grotesk', sans-serif;
+
+}
+
+.arrow-right{
+    animation: flickerAnimation 3s infinite;
+}
+@keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+
+  .projects{
+    width: 100%;
+    display: flex;
+    position: relative;
+  }
+  .projects .half-f{
+    width: 100%;
+  
+  }
+  .projects .half-f h1{
+    right: 1%;
+    position: absolute;
+    margin-top: -20px;
+    width: 300px;
+    font-size: 70px;
+    font-family: 'Space-Grotesk', sans-serif;
+    transform: rotateZ(45deg);
+}
+  .projects .half-f  span{
+    color: #ffffff;
+  }
+.projects .half-f h1{
+   color: rgb(0, 0, 0);
+}
+
+#different-contact{
+    color:white;
+    text-align: center;
+    padding: 5px 10px 5px 10px ;
+    border-radius: 200px;
+    background-color: #2B2B2B;
+}
+
+#different-contact:hover{
+    color: #C1C1C1;
+    font-size: 23px;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+  

@@ -1,0 +1,68 @@
+.movie-project{
+    border-radius: 4px;
+    padding: 20px  20px 20px 40px ;
+   
+    margin-top: 30px;
+    display: flex;
+    width: 80%;
+}
+.movie-content{
+    padding-left: 20px;
+}
+.movie-project .movie-content #movie-title{
+    text-align: left;
+    color: white;
+    font-size: 22px;
+    letter-spacing: 5px;
+    font-family: 'Space-Grotesk', sans-serif;
+}
+.movie-content #desc{
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    line-height: 1.3;
+    font-family: 'Space-Grotesk', sans-serif;
+}
+.movie-content #btn-container #btn-link{
+    color: #fdfdfd;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-family: 'Space-Grotesk', sans-serif;
+    border: 4px white solid;
+    border-radius: 45px;
+    padding: 12px 34px;
+    transition: color 1s ease, background-color 1s ease;
+}
+.movie-content #btn-container #btn-link:hover{
+    color: #2B2B2B;
+    background-color: white;
+}
+.movie-content #btn-container{
+    margin-top: 60px;
+    text-align: center;
+}
+ .movie-container{
+   display: flex;
+   justify-content: end;
+}
+
+.use-language{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    font-family: 'Space-Grotesk', sans-serif;
+    padding: 12px 34px;
+}
+.quizz-content #btn-container #btn-link{
+    color: #fdfdfd;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-family: 'Space-Grotesk', sans-serif;
+    border: 4px white solid;
+    border-radius: 45px;
+    padding: 12px 34px;
+}

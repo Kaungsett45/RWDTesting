@@ -1,0 +1,250 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    overflow: visible;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navigation-options{
+    display: flex;
+    list-style: none;
+}
+.navigation-options li{
+    padding: 5px 40px 5px 10px ;
+    font-size: 23px;
+    font-family: 'Space Grotesk', sans-serif;
+    cursor: pointer;
+}
+nav{
+    margin:20px  66px 0px 66px;
+    display: flex;
+   justify-content: space-between;
+    justify-items: center;
+}
+
+#square-block-one{
+    position: relative;
+    background:#C1C1C1;
+    width: 50%;
+    margin-top:80px;
+    height: 130px;
+    animation: 1s ease-out 0s  slideInFromLeft;
+    
+}
+@keyframes slideInFromLeft{
+    0%{
+        transform:translateX(-100%) ;
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes slideInFromRight{
+    0%{
+        transform:translateX(100%) ;
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.square-block-two{
+    position: absolute;
+    background:#C1C1C1;
+    width: 50%;
+    right: 0px;
+    margin: 0px;
+    margin-top:0px;
+    height: 130px;
+    overflow: hidden;
+    animation: 1s ease-out 0s  slideInFromRight;
+}
+.square-black{
+    position: absolute;
+    width: 82px;
+    height: 80px;
+    top:35%;
+    right: 47.1%;
+    z-index: 2;
+    background: white;
+    border: 7px solid black;
+}
+.square-black-shadow{
+    position: absolute;
+    width: 85px;
+    height: 82px;
+    top:36.5%;
+    right: 46.2%;
+    z-index: 1;
+    border-radius: 2px;
+    border: 7px solid black;
+}
+
+
+
+.small-square-one{
+    width: 10px;
+    height: 20px;
+    position:absolute;
+    border: solid 4px black;
+    left: 80px;
+    top: 15%;
+}
+.small-square-two{
+    width: 10px;
+    height: 20px;
+    position:absolute;
+    border: solid 4px black;
+    right: 8%;
+    top: -1%;
+}
+
+.hey{
+    position: absolute;
+    font-size:150px;
+    font-family: 'Bangers', sans-serif;
+    letter-spacing: 4px;
+    top: -2%;
+    left: 12%;
+    z-index:3;
+}
+.hey-shadow{
+    position: absolute;
+    font-size:150px;
+    font-family: 'Bangers', sans-serif;
+    letter-spacing: 4px;
+    color: white; 
+    
+    text-shadow: -4px 4px 0 #000, 
+    4px 4px 0 #000, 
+   4px -4px 0 #000, 
+  -4px -4px 0 #000;
+    top: -0.5%;
+    left: 12.2%;
+}
+.iam{
+    position: absolute;
+    font-size:150px;
+    font-family: 'Bangers', sans-serif;
+    letter-spacing: 6px;
+    right:7.5%;
+    top: 9%;
+    z-index:3;
+}
+.iam-shadow{
+    position: absolute;
+    font-size:150px;
+    font-family: 'Bangers', sans-serif;
+    letter-spacing: 6px;
+    right:7%;
+    top: 10.3%;
+    color: white; 
+    
+    text-shadow: -4px 4px 0 #000, 
+    4px 4px 0 #000, 
+   4px -4px 0 #000, 
+  -4px -4px 0 #000;
+} 
+.line-one{
+    position: absolute;
+    top: 45%;
+    left: 4%;
+    width: 18%;
+    height: 6px;
+    display: block;
+    background-color: #000;
+    animation:  1s ease-out 0s  showEffect;
+}
+@keyframes showEffect {
+    0% { display: hidden;  }
+   100%{
+    display: block;
+   }
+
+}
+.line-two{
+    position: absolute;
+    top: 75%;
+    right: 4%;
+    width: 18%;
+    height: 6px;
+    background-color: #000;
+}
+.AungKaungSett{
+    height: auto;
+    position: absolute;
+    font-size:150px;
+    font-family: 'Spartan', sans-serif;
+    left: 8%;
+    top: 37%;
+    z-index:3;
+}
+@keyframes identifier {
+    
+}
+.AungKaungSett-shadow{
+    
+    
+    position: absolute;
+    font-size:150px;
+    font-family: 'Spartan', sans-serif;
+    left: 8.6%;
+    top: 38%;
+    color: white; 
+    
+    text-shadow: -4px 4px 0 #000, 
+    4px 4px 0 #000, 
+   4px -4px 0 #000, 
+  -4px -4px 0 #000;
+}
+
+.services{
+     font-size: 16px;
+     font-family: 'Ropa Sans', sans-serif;
+     position: absolute;
+     bottom: 3%;
+     right: 4%;
+}
+.services p{
+    letter-spacing: 1px;
+}
+.services .ser{
+    font-size: 20px;
+    text-align: right;
+}
+#graphic{
+    margin-left: 24px;
+}
+.services .service-info{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    justify-self: center;
+    margin-right: 20px;
+}
+
+.all-block{
+    height: 440px;
+}
+
+.scroll{
+    text-align: center;
+    width: 100%;
+    margin-left: 5px;
+    font-size: 20px;
+    letter-spacing: 6px;
+    font-family: 'Inter', sans-serif;
+   
+}
+
+
+
+
+/* responsive work */
+*{
+    box-sizing: border-box;
+}
+
+
