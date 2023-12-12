@@ -10,18 +10,41 @@ html{
     display: flex;
     list-style: none;
 }
+.navigation-options li a{
+    color: black;
+    text-decoration: none;
+}
+
+.navigation-options .different-contact a{
+    color: white;
+}
 .navigation-options li{
     padding: 5px 40px 5px 10px ;
     font-size: 23px;
     font-family: 'Space Grotesk', sans-serif;
     cursor: pointer;
 }
-nav{
-    margin:20px  66px 0px 66px;
+nav {
+    visibility: hidden; /* initially hide the nav */
+    margin: 20px 66px 0 66px;
     display: flex;
-   justify-content: space-between;
+    justify-content: space-between;
     justify-items: center;
+    animation: slideInFromTop 0.5s ease-in-out 1.5s forwards; /* 5s delay */
 }
+@keyframes slideInFromTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
 
 #square-block-one{
     position: relative;
@@ -69,6 +92,18 @@ nav{
     z-index: 2;
     background: white;
     border: 7px solid black;
+    animation:  rotateanimation 1.5s ease-in-out 0s forwards;
+}
+
+@keyframes rotateanimation{
+    0%{
+        opacity: 0;
+        transform: rotate(0deg);
+    }
+    100%{
+        opacity: 1;
+        transform: rotate(360deg);
+    }
 }
 .square-black-shadow{
     position: absolute;
@@ -79,9 +114,13 @@ nav{
     z-index: 1;
     border-radius: 2px;
     border: 7px solid black;
+    animation:  rotateanimation 1.5s ease-in-out 0s forwards;
+
 }
 
-
+#col-9{
+    display:none;
+}
 
 .small-square-one{
     width: 10px;
@@ -108,6 +147,8 @@ nav{
     top: -2%;
     left: 12%;
     z-index:3;
+    animation: slideinfromleft 2s ease-in-out 0s forwards;
+
 }
 .hey-shadow{
     position: absolute;
@@ -122,6 +163,17 @@ nav{
   -4px -4px 0 #000;
     top: -0.5%;
     left: 12.2%;
+    animation: slideinfromleft 2s ease-in-out 0s forwards;
+}
+@keyframes  slideinfromleft{
+    0%{
+        opacity: 0;
+        transform: translateX(-80%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 .iam{
     position: absolute;
@@ -131,6 +183,8 @@ nav{
     right:7.5%;
     top: 9%;
     z-index:3;
+    animation: slideinfromleft 2s ease-in-out 0s forwards;
+
 }
 .iam-shadow{
     position: absolute;
@@ -145,7 +199,19 @@ nav{
     4px 4px 0 #000, 
    4px -4px 0 #000, 
   -4px -4px 0 #000;
+  animation: slideinfromleft 2s ease-in-out 0s forwards;
+
 } 
+@keyframes  slideinfromright{
+    0%{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 .line-one{
     position: absolute;
     top: 45%;
@@ -153,8 +219,10 @@ nav{
     width: 18%;
     height: 6px;
     display: block;
+    opacity: 0;
     background-color: #000;
-    animation:  1s ease-out 0s  showEffect;
+    animation: slideInAnimation 1s ease-in-out 1.5s forwards;
+
 }
 @keyframes showEffect {
     0% { display: hidden;  }
@@ -164,14 +232,18 @@ nav{
 
 }
 .line-two{
+    
+    opacity: 0;
     position: absolute;
     top: 75%;
     right: 4%;
     width: 18%;
     height: 6px;
     background-color: #000;
+    animation: slideInAnimation 1s ease-in-out 1.5s forwards;
+
 }
-.AungKaungSett{
+/* .AungKaungSett{
     height: auto;
     position: absolute;
     font-size:150px;
@@ -179,10 +251,10 @@ nav{
     left: 8%;
     top: 37%;
     z-index:3;
+    animation: slideinfromleft 2s ease-in-out 0s forwards;
+
 }
-@keyframes identifier {
-    
-}
+
 .AungKaungSett-shadow{
     
     
@@ -192,31 +264,44 @@ nav{
     left: 8.6%;
     top: 38%;
     color: white; 
-    
+    animation: slideinfromleft 2s ease-in-out 0s forwards;
+
     text-shadow: -4px 4px 0 #000, 
     4px 4px 0 #000, 
    4px -4px 0 #000, 
   -4px -4px 0 #000;
-}
+} */
 
 .services{
-     font-size: 16px;
+     font-size: 15px;
      font-family: 'Ropa Sans', sans-serif;
      position: absolute;
-     bottom: 3%;
-     right: 4%;
+     bottom: 5.5%;
+     right: 4%;   opacity: 0; /* Start with 0 opacity */
+     animation: slideInAnimation 1s ease-in-out 1.5s forwards;
+}
+@keyframes slideInAnimation {
+    0% {
+        opacity: 0;
+        /* transform: translateX(100%); */
+    }
+    100% {
+        opacity: 1;
+        /* transform: translateX(0); */
+    }
 }
 .services p{
     letter-spacing: 1px;
 }
 .services .ser{
-    font-size: 20px;
+    font-size: 18px;
     text-align: right;
 }
 #graphic{
     margin-left: 24px;
 }
 .services .service-info{
+  
     width: 200px;
     display: flex;
     justify-content: space-between;
@@ -230,14 +315,22 @@ nav{
 }
 
 .scroll{
+    
     text-align: center;
     width: 100%;
     margin-left: 5px;
     font-size: 20px;
     letter-spacing: 6px;
     font-family: 'Inter', sans-serif;
-   
+    opacity: 0;
+    animation: slideInAnimation 1s ease-in-out 2s forwards, flickerAnimation 2s infinite;
 }
+@keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+
 
 
 
@@ -247,4 +340,135 @@ nav{
     box-sizing: border-box;
 }
 
+#floatingButton {
+    opacity: 0; 
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: opacity 0.3s ease;
+}
+
+#floatingButton button {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#scrollToAbove{
+    height: 40px;
+    width:40px;
+    margin-top: 60px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 60%;
+    font-size: 20px;
+}
+#scrollToAbove i{
+    color: rgb(0, 0, 0);
+}
+#scrollToAbove:hover{
+    background-color: #C1C1C1;
+}
+
+@media only screen and (max-width: 600px){
+    *{
+       box-sizing:border-box;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    nav{
+        
+        display: flex;
+        justify-items: center;
+        margin:10px 10px 0px 10px;
+    }
+      .navigation-options{
+        display: none;
+      }
+    #col-3{
+        width: 44;
+        height:26;
+    }
+      nav  #col-9{
+        display: block;
+        cursor: pointer;
+        font-size: 42px;
+    }
+   
+  
+  #square-block-one{
+  position: relative;
+  background:#C1C1C1;
+  margin-top: 10px;
+  width: 50%;
+  height: 30px;
+  animation: 1s ease-out 0s  slideInFromLeft;
+  
+  }
+  .square-block-two{
+  position: absolute;
+  background:#C1C1C1;
+  width: 50%;
+  right: 0px;
+  margin: 0px;
+  margin-top:0px;
+  height: 30px;
+  overflow: hidden;
+  animation: 1s ease-out 0s  slideInFromRight;
+  }
+  .small-square-one{
+  display:none;
+  }
+  .small-square-two{
+    right: 22%;
+  }
+  .square-black{
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top:15%;
+  right: 49%;
+  z-index: 2;
+  background: white;
+  border: 1px solid black;
+  animation:  rotateanimation 1.5s ease-in-out 0s forwards;
+  }
+  
+  
+  .square-black-shadow{
+  display: none;
+  }
+  .line-one, .line-two,.services,div .scroll{
+  display:none;
+  }
+  
+  
+.hey{
+    position: absolute;
+    font-size:100px;
+    font-family: 'Bangers', sans-serif;
+    letter-spacing: 4px;
+    top: -2%;
+    left: 2%;
+    z-index:3;
+    animation: slideinfromleft 2s ease-in-out 0s forwards;
+
+}
+/* .hey-shadow{
+    position: absolute;
+    font-size:150px;
+    font-family: 'Bangers', sans-serif;
+    letter-spacing: 4px;
+    color: white; 
+    
+    text-shadow: -4px 4px 0 #000, 
+    4px 4px 0 #000, 
+   4px -4px 0 #000, 
+  -4px -4px 0 #000;
+    top: -0.5%;
+    left: 12.2%;
+    animation: slideinfromleft 2s ease-in-out 0s forwards;
+} */
+  
+  }
 
